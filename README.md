@@ -1,5 +1,5 @@
 # LearningP5JS
-Various demos I've made while learning p5js
+### Various demos I've made while learning p5js
 
 This is a collection of math and computer science related demos I created while learning p5.js
 
