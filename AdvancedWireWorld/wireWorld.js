@@ -4,7 +4,7 @@
 //A version of wireworld with custom functionality and GUI
 //Also, "metal" has been replaced with "wire"
 
-//New types: LED, bettery
+//New types: LED, battery
 //New Functions:
 
 var x, y;
