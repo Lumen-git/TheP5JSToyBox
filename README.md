@@ -9,7 +9,7 @@ Below is a list of each demo, in order of completion, and a description of what 
 -------
 
 <dl>
-<dt>FlyOver</dt>
+<dt>## FlyOver</dt>
 <dd>FlyOver is a demo of Perlin noise being used to create simple terrain. The terrain was done with heavy guidance from the Coding Train video on the subject, but the flying ship was does separately. It uses Perlin Noise to move left and right, and a delta value to tilt in the direction of the movement.</dd>
 <dt>Game Of Life</dt>
 <dd>A demo of Conway's Game of Life. This is something I wanted to pull off ever since I began learning CS, but never really had the means to do. Being able to do it as my second demo in p5js? I gotta say, it feels pretty good. It's simple, but it's something I love. This is a demo that follows the standard rules, but treats the outer ring of cells as always alive to avoid having to deal with index out of bound errors. Maybe not the cleanest solution, but it works, and for a demo and a lesson, I'll take it.</dd>
