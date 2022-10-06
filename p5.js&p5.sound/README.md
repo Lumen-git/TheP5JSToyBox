@@ -14,4 +14,6 @@
 <dd>Same as WireWorld, but with FPS control, DOM elements to give the user some context, and 2 custom elements</dd>
 <dt>Synesthesia</dt>
 <dd>My first attempt at the p5 sound library. Based on the neurological phenomenon known as <a href="https://en.wikipedia.org/wiki/Synesthesia">synesthesia</a>, specifically chromesthesia. While it varies from song to song, person to person, and instrument to instrument, this is based on my personal experience with some songs where dark, deep noises tend to be in the center and lighter, higher noises are off to the sides. This demo is based off the same grid system used in the Flyover demo. To load a song, put the song in the same file and add its title to line 12 (theres a note there to guide you).</dd>
+<dt>3D Game of Life</dt>
+<dd>A 3D variant of Conway's Game of Life. Here, cells with 4 or 5 neighbors are alive while cells with more or less are dead. The universe is limited to 25x25x25 cells to prevent lagging, as 3D space takes quite a bit to compute.</dd>
 </dl>

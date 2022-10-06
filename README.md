@@ -16,6 +16,7 @@ Below is a quick overview of the contents of this project and its web of folders
 <li>WireWorld</li>
 <li>AdvancedWireWorld</li>
 <li>Synesthesia</li>
+<li>3D Game of Life</li>
 </ul>
 
 <!--
