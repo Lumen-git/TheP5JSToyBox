@@ -19,8 +19,9 @@ Below is a quick overview of the contents of this project and its web of folders
 <li>3D Game of Life</li>
 </ul>
 
-<!--
-## Basic
+
+## C64 Basic
 <ul>
+<li>Rule30ECA</li>
 </ul>
---->
+

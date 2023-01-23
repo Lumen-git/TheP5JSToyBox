@@ -1,0 +1,53 @@
+10 DIM A$(40)
+15 DIM B$(40)
+20 FOR N = 0 TO 39
+30 A$(N) = "0"
+35 B$(N) = "0"
+40 NEXT N
+50 A$(19) = "1"
+55 B$(19) = "1"
+60 FOR N = 20 TO 39
+70 A$(N) = "0"
+75 B$(N) = "0"
+80 NEXT N
+85 OF = 0
+90 FOR N = 0 TO 39
+100 IF A$(N) = "0" GOTO 111
+110 IF A$(N) = "1" GOTO 113
+111 POKE 1024 + (40 * OF) + N, 32
+112 GOTO 115
+113 POKE 1024 + (40 * OF) + N, 160
+114 GOTO 115
+115 NEXT N
+116 OF = OF + 1
+120 FOR N = 0 TO 39
+125 RC$ = ""
+130 IF N = 0 GOTO 160
+140 IF N = 40 GOTO 200
+150 GOTO 240
+160 RC$ = RC$ + A$(39)
+170 RC$ = RC$ + A$(0)
+180 RC$ = RC$ + A$(1)
+190 GOTO 280
+200 RC$ = RC$ + A$(38)
+210 RC$ = RC$ + A$(39)
+220 RC$ = RC$ + A$(0)
+230 GOTO 280
+240 RC$ = RC$ + A$(N-1)
+250 RC$ = RC$ + A$(N)
+260 RC$ = RC$ + A$(N+1)
+270 GOTO 280
+280 IF RC$ = "111" THEN B$(N) = "0"
+290 IF RC$ = "110" THEN B$(N) = "0"
+300 IF RC$ = "101" THEN B$(N) = "0"
+310 IF RC$ = "100" THEN B$(N) = "1"
+320 IF RC$ = "011" THEN B$(N) = "1"
+330 IF RC$ = "010" THEN B$(N) = "1"
+340 IF RC$ = "001" THEN B$(N) = "1"
+350 IF RC$ = "000" THEN B$(N) = "0"
+360 NEXT N
+370 FOR N = 0 TO 39
+380 A$(N) = B$(N)
+390 NEXT N
+400 IF OF <= 25 GOTO 90
+410 END
