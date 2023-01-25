@@ -1,14 +1,11 @@
 10 DIM A$(40)
 15 DIM B$(40)
-20 FOR N = 0 TO 39
+20 FOR N = 0 TO 19
 30 A$(N) = "0"
-35 B$(N) = "0"
 40 NEXT N
-50 A$(19) = "1"
-55 B$(19) = "1"
-60 FOR N = 20 TO 39
+50 A$(20) = "1"
+60 FOR N = 21 TO 39
 70 A$(N) = "0"
-75 B$(N) = "0"
 80 NEXT N
 85 OF = 0
 90 FOR N = 0 TO 39
@@ -23,7 +20,7 @@
 120 FOR N = 0 TO 39
 125 RC$ = ""
 130 IF N = 0 GOTO 160
-140 IF N = 40 GOTO 200
+140 IF N = 39 GOTO 200
 150 GOTO 240
 160 RC$ = RC$ + A$(39)
 170 RC$ = RC$ + A$(0)
