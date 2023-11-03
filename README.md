@@ -7,7 +7,7 @@ Below is a quick overview of the contents of this project and its web of folders
 
 -------
 
-## p5.js & p5.sound
+## [p5.js & p5.sound](/p5.js&p5.sound/README.md)
 <ul>
 <li>FlyOver</li>
 <li>Game Of Life</li>
